@@ -1,0 +1,9 @@
+<h4><%= @form.title %></h4>
+
+<ul>
+  <% @drafts.each do |draft| %>
+    <li>
+      <%= link_to draft.title, form_draft_path(@form, draft) %>
+    </li>
+  <% end %>
+</ul>

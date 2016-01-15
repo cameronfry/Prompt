@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prompt</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>Prompt</h1>
+
+  <nav>
+    <% if session[:user] %>
+    <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a></h2>
+    <% else %>
+    <a href="/sign_up">Sign up</a>
+    <a href="/sign_in">Sign in</a>
+    <% end %>
+    <a href = "/forms">Prompts</a>
+    <a href = "/">Home</a>
+  </nav>
+
+    <%= yield %>
+
+</body>
+</html>

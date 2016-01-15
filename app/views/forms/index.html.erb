@@ -1,0 +1,11 @@
+
+<ul>
+    <li><h3>My Prompts</h3>
+  <% @forms.each do |form| %>
+    <li>
+      <%= link_to form.title, form %>
+    </li>
+  <% end %>
+</ul>
+
+<h2><%= link_to "New Prompt", new_form_path %></h2>

@@ -1,0 +1,20 @@
+<h4><%= "Create New |#{@form.title}| Draft" %></h4><br />
+
+<ul>
+  <% @questions.each do |question| %>
+    <li>
+      <%= question.text %>
+    </li>
+  <% end %>
+</ul>
+
+<br />
+
+<%= form_for @draft, url: {action: "create"}, html: {class: "draft_text_form"} do |f| %>
+
+  <%= f.text_field(:title) %><br /><br />
+
+  <%= f.text_area :text, size: "100x20" %><br />
+  <%= f.submit "Submit Draft"  %>
+
+<% end %>

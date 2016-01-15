@@ -1,0 +1,12 @@
+<h1>Drafts Edit Page</h1>
+
+<%= form_for [@form, @draft], url: {action: "update"}, html: {class: "edit_draft_form"} do |f| %>
+
+  <%= f.text_area :text, size: "60x12" %><br />
+  <%= f.submit "Edit Draft" %>
+
+<% end %>
+
+<%= form_for [@form, @draft], method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

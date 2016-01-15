@@ -1,0 +1,17 @@
+<h4><%= @form.title %></h4>
+
+<h3>Questions</h3>
+
+<ul>
+  <% @form.questions.each do |question| %>
+    <li>
+      <%= question.text %> <%= link_to "(edit)", edit_form_question_path(@form, question) %>
+    </li>
+  <% end %>
+</ul>
+
+<h5><%= link_to "Add Questions", new_form_question_path(@form) %></h5>
+<h5><%= link_to "Create New Draft", new_form_draft_path(@form) %></h5>
+<h5><%= link_to "Change Promt Name", edit_form_path(@form) %></h5>
+
+<h5><%= link_to "#{@form.title} Drafts", form_drafts_path(@form) %></h5>

@@ -1,0 +1,138 @@
+body {
+  background-color: #FF8900;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6em;
+  color: white;
+  font-family: 'EngraversMT';
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'EngraversMT';
+  font-size: 3em;
+  background-color: #FFC582;
+  text-align: center;
+  width: 80%;
+  border-radius: 40px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+h3 {
+  margin: 0 auto;
+  border-bottom: 1px;
+  border-bottom-color: white;
+  font-family: 'EngraversMT';
+  font-size: 1em;
+  text-align: center;
+  background-color: #FFC582;
+  margin-top: 1%;
+}
+
+h4 {
+  margin: 0 auto;
+  font-family: 'EngraversMT';
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: 1%;
+}
+
+h5 {
+  font-family: 'EngraversMT';
+  font-size: 1em;
+  background-color: #FFC582;
+  text-align: center;
+  width: 80%;
+  border-radius: 40px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+p {
+  text-align: justify;
+  margin: 0 auto;
+  width: 70%;
+  word-wrap: break-word;
+}
+
+nav {
+  background-color: #FFC582;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'century';
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #FF8900;
+}
+
+ul {
+  background-color: #FFC582;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'century';
+  text-decoration: none;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+  border-radius: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+form {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1%;
+  color: white;
+}
+
+input, select, text_field {
+  background-color: #FFC582;
+  font-family: 'century';
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
+input text_area {
+  background-color: #FFC582;
+  font-family: 'century';
+  border-radius: 40px;
+}
+
+input, select, submit {
+  background-color: #FFC582;
+  font-family: 'century';
+  font-size: 2em;
+  color: white;
+}
+
+textarea {
+  font-size: 1em;
+  padding: 5%;
+}

@@ -1,0 +1,14 @@
+<h4>Edit Question</h4>
+
+<%= form_for [@form, @question], url: {action: "update"}, html: {class: "edit_question_form"} do |f| %>
+
+  <%= f.text_area :text, size: "60x12" %><br /><br />
+  <%= f.submit "Edit Question" %>
+
+<% end %>
+
+<br />
+
+<%= form_for [@form, @question], method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

@@ -1,0 +1,12 @@
+<h4><%= "Edit #{@form.title}" %></h4>
+
+<%= form_for @form do |f| %>
+
+  <%= f.text_field :title %>
+
+  <%= f.submit value = "Update" %>
+<% end %>
+
+<%= form_for @form, method: :delete do |f| %>
+  <%= f.submit "Delete!", class: "delete" %>
+<% end %>

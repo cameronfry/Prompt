@@ -1,0 +1,11 @@
+<h4>Add Questions to <%= @form.title %></h4><br />
+
+<%= form_for [@form, @question], url: {action: "create"}, html: {class: "new_question_form"} do |f| %>
+
+  <%= f.text_field :text, size: "60x12", autofocus: "autofocus" %>
+  <br /><br />
+  <%= f.submit "Add Question" %>
+
+<% end %>
+
+<h3><%= link_to  "Finish and  go to #{@form.title}", form_path(@form) %></h3>
